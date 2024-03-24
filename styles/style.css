@@ -1,0 +1,68 @@
+
+
+@font-face {
+    font-family: "arial";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    font-family: proximanova, sans-serif;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*https://brand.funda.nl/d/d9gw4zTPqYFU/brand-guide?#/basics-1/kleur*/
+/*general*/
+:root {
+    --green: #cafcd5; /*huisstijl #0071B3 orgineel*/
+    --white: #ffffff;
+    --blue: #0E12E5
+
+}
+main{
+    padding-left: 2em;
+    padding-right: 2em;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+a{
+    text-decoration: none;
+    color: var(--blue);
+}
+.index-intro{
+    background-color: var(--green);
+    padding: 1em;
+    line-height: 1.5em;
+}
+.sprint7-simon,.sprint8-justus{
+    background-color: var(--green);
+    padding: 1em;
+    line-height: 1.5em;
+}
+.image-size{
+    width: 278px;
+}
+
+
+
+@media screen and (min-width:630px) {
+
+    .sprint7-simon,.sprint8-justus,.index-intro{
+        /*padding: 0em 1em 0.5em 1em;*/
+        margin-top: 1em;
+        width: 36em;
+    }
+
+}
+

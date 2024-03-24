@@ -1,0 +1,75 @@
+:root {
+    --green: #cafcd5; /*huisstijl #0071B3 orgineel*/
+    --white: #ffffff;
+    --blue: #0E12E5
+
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--blue);
+}
+.menu{
+    background-color: #cafcd5;
+}
+.menu-ul{
+    background-color: var(--green);
+    /*padding: 1em;*/
+    padding: 1em 1em 1em 1em;
+    margin: 0 2em 1em 2em ;
+    display: grid;
+    grid-template-columns: auto;
+    list-style-type: none;
+    line-height: 1.5em;
+
+
+}
+.menu-ul{
+    list-style-type: none;
+}
+.menu-li{
+    grid-column: 1;
+    /*background-color: #ff8484;*/
+    /*margin-bottom: 1em;*/
+}
+.menu-li-second{
+    grid-column: 1;
+    /*background-color: #ff8484;*/
+
+}
+.menu-li-images{
+    grid-column: 2;
+    grid-row:1;
+    margin-right: auto;
+    list-style-type: none;
+}
+@media screen and (min-width:650px) {
+    .menu-ul{
+        background-color: var(--green);
+        display: flex;
+        flex-direction: row;
+
+
+    }
+    .menu-ul{
+
+
+    }
+    .menu-li{
+        /*grid-column: 1;*/
+        margin: 0.5em 1em 0 0px;
+        /*width: 10em;*/
+    }
+    .menu-li-second{
+        /*grid-column: 2;*/
+        margin: 0.5em 0 0 0px;
+        /*width: 13em;*/
+    }
+    .menu-li-images{
+        margin-left: 1em;
+        /*grid-column: 3;*/
+        /*margin: 0.1em 0 0 0px;*/
+    }
+
+}

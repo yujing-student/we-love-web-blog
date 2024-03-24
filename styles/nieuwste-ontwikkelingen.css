@@ -1,0 +1,116 @@
+
+
+@font-face {
+    font-family: "arial";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    font-family: proximanova, sans-serif;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*https://brand.funda.nl/d/d9gw4zTPqYFU/brand-guide?#/basics-1/kleur*/
+/*general*/
+:root {
+    --green: #cafcd5; /*huisstijl #0071B3 orgineel*/
+    --white: #ffffff;
+
+}
+main{
+    padding-left: 2em;
+    padding-right: 2em;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-ul{
+    background-color: var(--green);
+    padding: 1em;
+    margin: 0 2em 1em 2em ;
+
+}
+.image-size{
+
+    width: 100%;  /* Make image fit the width of the div */
+    height: auto;  /* Maintain image aspect ratio */
+    object-fit: cover;
+}
+.intro-section{
+    background-color: var(--green);
+    padding: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+.sprint7-section,.sprint8-section{
+    background-color: var(--green);
+    padding: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+
+}
+.sprint7-ol-grid,.sprint8-ol-grid-design{
+    display: grid;
+    row-gap: 0.4em;
+}
+.sprint8-ol-grid-design{
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: auto;
+    /*margin-bottom: 1em;*/
+}
+.grid-image-houses{
+    display: grid;
+    padding-inline: 3em;
+    grid-template-columns: 1fr;
+}
+.desing-sprint8{
+    margin-right: 6em;
+}
+.sprint8-article-last-article{
+    margin-top: 2em;
+    margin-right: 6em;
+}
+
+.grid-ol-linkjes-images {
+    display: grid;
+    /*grid-template-columns: 30em; !* Adjust width as needed *!*/
+    row-gap: 0.4em;
+}
+
+@media screen and (min-width:530px) {
+    .image-href{
+        display: grid;
+        grid-template-columns: auto;
+        margin-bottom: 2em;
+    }
+    .image-size{
+        width: 378px;
+    }
+
+}
+
+
+@media screen and (min-width:630px) {
+  .intro-section{
+      /*padding: 1em 1em 0em 1em;*/
+      margin-bottom: 1em;
+  }
+    .sprint7-section,.sprint8-section,.intro-section{
+        /*padding: 0em 1em 0.5em 1em;*/
+        margin-top: 1em;
+        width: 36em;
+    }
+
+}
