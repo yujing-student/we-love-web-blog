@@ -37,19 +37,21 @@ main{
 }
 main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 36em));
+    grid-template-rows: auto auto auto auto auto;
     grid-row-gap: 2em;
     grid-column-gap: 2em;
+    place-self: center;
+    place-content: center;
 }
 .intro-section{
     display: grid;
     grid-row: 1;
+    /*grid-column: 2;*/
     justify-content: center;
+    /*place-self: center;*/
 }
-.sprint10-section,.sprint7-section,.sprint8-section{
-    display: grid;
-    grid-row: 2;
-}
+
 .menu-ul{
     background-color: var(--green);
     padding: 1em;
@@ -116,6 +118,17 @@ main{
 }
 
 @media screen and (min-width:530px) {
+    main {
+
+    }
+    .intro-section
+   {
+        grid-column: 1;
+        grid-row: 1;
+        /* Reset to single column for wider screens */
+    }
+
+
     .image-href{
         display: grid;
         grid-template-columns: auto;
@@ -129,6 +142,15 @@ main{
 
 
 @media screen and (min-width:630px) {
+    .main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 36em));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        grid-row-gap: 2em;
+        grid-column-gap: 2em;
+        place-self: center;
+        place-content: center;
+    }
   .intro-section{
       /*padding: 1em 1em 0em 1em;*/
       margin-bottom: 1em;
@@ -137,6 +159,23 @@ main{
         /*padding: 0em 1em 0.5em 1em;*/
         margin-top: 1em;
         width: 36em;
+    }
+
+    .sprint10-section{
+        display: grid;
+        /*grid-row: 2;*/
+        /*place-self: center;*/
+    }
+    .sprint8-section{
+        display: grid;
+        /*grid-row: 2;*/
+        /*grid-column: 2;*/
+        /*place-self: center;*/
+    }
+    .sprint7-section{
+        display: grid;
+        /*grid-row: 3;*/
+        /*place-self: center;*/
     }
 
 }
