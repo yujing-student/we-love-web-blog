@@ -27,24 +27,19 @@ body {
 
 }
 main{
-
-}
-main{
-
-    display: grid;
-    /*grid-template-columns :repeat(auto-fit, minmax(200px, 36em));*/
-    grid-gap: 2em;
-    grid-template-columns: 1fr;
+    /*margin: 0 auto;*/
 }
 .intro-section{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    /*margin: 0 auto;*/
+    width: 36em;
 }
 
 .grid-blogs {
-    margin: 0 auto;
     display: grid;
+    grid-row: 2;
+    grid-column-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(36em, 1em));
+
 }
 .menu-ul{
     background-color: var(--green);
@@ -114,15 +109,9 @@ main{
 
 @media screen and (min-width:530px) {
 
-
-    main{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 36em));
-        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-        grid-row-gap: 2em;
-        grid-column-gap: 2em;
+    .intro-section{
+        /*margin: 0 auto;*/
     }
-
     .image-href{
         display: grid;
         grid-template-columns: auto;
@@ -136,17 +125,11 @@ main{
 
 
 @media screen and (min-width:630px) {
-    main{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 36em));
-        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-        grid-row-gap: 2em;
-        grid-column-gap: 2em;
+
+    .intro-section{
+        /*padding: 1em 1em 0em 1em;*/
+        margin-bottom: 1em;
     }
-  .intro-section{
-      /*padding: 1em 1em 0em 1em;*/
-      margin-bottom: 1em;
-  }
     .sprint7-section,.sprint8-section,.intro-section,.sprint10-section{
         /*padding: 0em 1em 0.5em 1em;*/
         margin-top: 1em;
