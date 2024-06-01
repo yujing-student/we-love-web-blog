@@ -32,9 +32,9 @@ main{
 main{
 
     display: grid;
-    grid-template-columns :repeat(auto-fit, minmax(200px, 36em));
+    /*grid-template-columns :repeat(auto-fit, minmax(200px, 36em));*/
     grid-gap: 2em;
-    /*grid-template-rows :repeat(auto-fit, minmax(200px, 36em));*/
+    grid-template-columns: 1fr;
 }
 .intro-section{
     display: grid;
@@ -45,7 +45,6 @@ main{
 .grid-blogs {
     margin: 0 auto;
     display: grid;
-    justify-content: center;
 }
 .menu-ul{
     background-color: var(--green);
@@ -115,17 +114,14 @@ main{
 
 @media screen and (min-width:530px) {
 
-    .grid-blogs{
-        grid-row: 2;
+
+    main{
         display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(36em, 39em) );
-
-        /*grid-template-columns: repeat(auto-fit, minmax(36em, 1fr));*/
-        /*grid-template-columns: auto auto auto auto auto;*/
-
+        grid-template-columns: repeat(auto-fit, minmax(200px, 36em));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        grid-row-gap: 2em;
+        grid-column-gap: 2em;
     }
-
-
 
     .image-href{
         display: grid;
@@ -140,14 +136,12 @@ main{
 
 
 @media screen and (min-width:630px) {
-    .main{
+    main{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 36em));
         grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         grid-row-gap: 2em;
         grid-column-gap: 2em;
-        place-self: center;
-        place-content: center;
     }
   .intro-section{
       /*padding: 1em 1em 0em 1em;*/
