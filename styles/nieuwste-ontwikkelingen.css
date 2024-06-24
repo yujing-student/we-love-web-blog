@@ -80,6 +80,8 @@ main{
     /*grid-template-columns: 30em; !* Adjust width as needed *!*/
     row-gap: 0.4em;
 }
+
+
 .overzicht{
     background-color: var(--green);
     padding: 1em;
@@ -88,6 +90,8 @@ main{
     margin-top: 2em;
     /*height: 67em;*/
 }
+
+
 @media screen and (min-width:530px) {
 
     .intro-section{
