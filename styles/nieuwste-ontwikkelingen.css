@@ -28,6 +28,9 @@ body {
 }
 main{
     /*margin: 0 auto;*/
+    margin-left: 3em;
+    margin-right: 3em;
+
 }
 .intro-section{
     /*margin: 0 auto;*/
@@ -35,10 +38,14 @@ main{
 }
 
 .grid-blogs {
-    display: grid;
-    grid-row: 2;
-    grid-column-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(36em, 1em));
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(36em, 1fr));
+        align-items: start;
+        justify-content: space-around;
+        row-gap: 2em;
+        column-gap: 2em;
+        padding-top: 2em;
 
 }
 .menu-ul{
@@ -68,45 +75,19 @@ main{
 
 
 }
-.sprint7-ol-grid,.sprint8-ol-grid-design{
-    display: grid;
-    row-gap: 0.4em;
-}
-.sprint8-ol-grid-design{
-    margin-bottom: 3em;
-    display: grid;
-    grid-template-columns: auto;
-    /*margin-bottom: 1em;*/
-}
-.grid-image-houses{
-    display: grid;
-    padding-inline: 3em;
-    grid-template-columns: 1fr;
-}
-.desing-sprint8{
-
-}
-.sprint8-article-last-article{
-
-}
-
-.sprint10-section{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.professional_commit{
-    display: grid;
-    grid-template-columns: 1fr;
-    /*margin-bottom: 1em;*/
-
-}
-
 .grid-ol-linkjes-images {
     display: grid;
     /*grid-template-columns: 30em; !* Adjust width as needed *!*/
     row-gap: 0.4em;
 }
-
+.overzicht{
+    background-color: var(--green);
+    padding: 1em;
+    line-height: 1.5em;
+    width: 36em;
+    margin-top: 2em;
+    /*height: 67em;*/
+}
 @media screen and (min-width:530px) {
 
     .intro-section{
@@ -118,7 +99,7 @@ main{
         margin-bottom: 2em;
     }
     .image-size{
-        width: 378px;
+        width: 493px;
     }
 
 }
@@ -130,10 +111,12 @@ main{
         /*padding: 1em 1em 0em 1em;*/
         margin-bottom: 1em;
     }
-    .sprint7-section,.sprint8-section,.intro-section,.sprint9-section,.sprint10-section,.sprint11-section{
+   .sprint8-section,.sprint9-section,.sprint10-section,.sprint11-section{
         /*padding: 0em 1em 0.5em 1em;*/
         margin-top: 1em;
-        width: 36em;
+        /*width: 36em;*/
+        height: 116em;
+
     }
 
 }
